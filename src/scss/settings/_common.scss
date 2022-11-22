@@ -1,0 +1,211 @@
+//=============/=============/=============
+/*
+burger: z-index: ;
+header: z-index: ;
+*/
+
+//=============/=============/=============
+._site-container {
+	min-height: 100vh;
+	@include flex-column;
+	overflow: hidden;
+
+	&__wide {
+		width: 100%;
+		max-width: var(--max-width-wide-container);
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+}
+
+//=============/=============/=============
+._container {
+	width: 100%;
+	max-width: var(--max-width-container);
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+//=============/=============/=============
+._content-from-container {
+	padding-left: max(15px, calc((100% - var(--content-width)) / 2));
+}
+
+//=============/=============/=============
+._visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+//=============/=============/=============
+._img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+//=============/=============/=============
+._btn-reset {
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+//=============/=============/=============
+._list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+//=============/=============/=============
+._input-reset {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	background-color: var(--color-white);
+
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}
+
+//=============/=============/=============
+._section-offset {
+	padding: 120px 0;
+
+	@include medium {
+		padding: 60px 0;
+	}
+
+	@include small {
+		padding: 30px 0;
+	}
+}
+
+//=============/=============/=============
+._section-title {
+	color: inherit;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 160%;
+	margin-bottom: 60px;
+
+	@include medium {
+		font-size: 40px;
+		line-height: 140%;
+		margin-bottom: 40px;
+	}
+
+	@include small {
+		font-size: 30px;
+		line-height: 120%;
+		margin-bottom: 30px;
+	}
+}
+
+//=============/=============/=============
+._main-btn {
+	@include flex-all-center;
+	padding: 10px 20px;
+	min-height: 48px;
+	transition: all 0.3s linear;
+
+	&__dark {
+		color: var(--color-text-light);
+		background-color: var(--color-dark);
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-dark);
+				background-color: var(--color-accent);
+			}
+		}
+	}
+
+	&__light {
+		background-color: var(--color-light);
+		border: 1px solid transparent;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-dark);
+				border-color: var(--color-accent);
+				background-color: var(--color-accent);
+			}
+		}
+	}
+}
+
+//=============/=============/=============
+._tooltip {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	background: rgba(20, 16, 36, 0.08);
+	cursor: pointer;
+
+	@include hover {
+		._tooltip__text {
+			@include show;
+		}
+	}
+
+	&__icon {
+		width: 4px;
+		height: 18px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+	}
+
+	&__text {
+		position: absolute;
+		left: 30px;
+		top: -60px;
+		font-size: 16px;
+		line-height: 160%;
+		width: 292px;
+		padding: 20px;
+		background-color: var(--color-white);
+		border-radius: 5px;
+		@include hide-transition;
+	}
+}
+
+//=============/=============/=============
+//- стили для scrollbar
+//- по умолчанию для всего сайта
+//- для определенного блока нужно подставить класс этого блока
+// &::-webkit-scrollbar {
+// 	width: 5px;
+// }
+
+// &::-webkit-scrollbar-track {
+// 	background: #ссс;
+// 	border-radius: 6px;
+// }
+
+// &::-webkit-scrollbar-thumb {
+// 	background: #000;
+// 	border-radius: 6px;
+// }

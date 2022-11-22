@@ -1,0 +1,63 @@
+:root {
+	//=============/ main /=============
+	--max-width: 1920;
+	--content-width: 1160px;
+	--max-width-container: 1230px;
+	--max-width-wide-container: 1600px;
+	--main-font-family: "Jost", sans-serif;
+	--main-font-weight: 400;
+	--main-font-size: 18px;
+
+	//=============/ colors /=============
+  --color-black: #000;
+	--color-text-black: #000;
+	--color-white: #fff;
+	--color-text-white: #fff;
+  --color-accent: #d52027;
+	--color-dark: #222629;
+	--color-text-dark: #222629;
+	--color-light: #d6dfea;
+	--color-text-light: #d6dfea;
+	--color-gray: #676568;
+
+	--pumpkin-color: #d9821a;
+	--spectra-color01: #dadfdf;
+	--spectra-color02: #b5c1c0;
+	--spectra-color03: #92a3a2;
+	--spectra-color04: #4f6a6a;
+	--spectra-color05: #2f4f4f;
+	--spectra-color06: #294242;
+	--spectra-color07: #1c2a29;
+	--bgImage-color: #505050;
+
+	//=============/ blocks /=============
+	--block-radius: 8px;
+	--block-shadow-dark: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
+	--block-shadow-light: 0px 0px 6px 0px rgba(255, 255, 255, 1);
+
+	//=============/ offset /=============
+	//отступ максимальный
+	--offset-maximum: 100px;
+	//отступ огромный
+	--offset-huge: 60px;
+	//отступ большой
+	--offset-large: 40px;
+	//отступ средний
+	--offset-middle: 30px;
+	//отступ маленький
+	--offset-small: 20px;
+	//отступ маленький в обратную сторону
+	--offset-small-back: -20px;
+	//отступ минимальный в обратную сторону
+	--offset-minimum: 10px;
+	--offset-minimum-back: -10px;
+	//отступ минимальный
+}
+//=============/=============/=============
+
+$maxWidth: 1920;
+$contentWidth: 1160px;
+$maxWidthContainer: 1190;
+$mainFontFamily: "Jost", sans-serif;
+$mainFontWeight: 400;
+$mainFontSize: 18px;
