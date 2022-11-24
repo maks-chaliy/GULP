@@ -6,7 +6,6 @@
 @import 'settings/breakpoints';
 @import 'settings/mixins';
 @import 'settings/normalize';
-@import 'settings/global';
 @import 'settings/common';
 
 
@@ -27,5 +26,5 @@ body {
 
 //=============/=============/=============
 //========== FILES ==========
-// @import 'files/burger';
-//@import 'ready_codes/_spoiler'
+//@import 'ready_codes/_spoiler';
+//@import 'ready_codes/_tooltip'

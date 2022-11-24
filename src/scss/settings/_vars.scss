@@ -9,26 +9,27 @@
 	--main-font-size: 18px;
 
 	//=============/ colors /=============
-  --color-black: #000;
 	--color-text-black: #000;
-	--color-white: #fff;
-	--color-text-white: #fff;
-  --color-accent: #d52027;
-	--color-dark: #222629;
-	--color-text-dark: #222629;
-	--color-light: #d6dfea;
-	--color-text-light: #d6dfea;
-	--color-gray: #676568;
+  --color-text-white: #fff;  
+  --color-text-primary: #1e212c;
+  --color-text-secondary: #787a80;
+  --color-text-accent: #ff5a30;
+  --color-text-mako: #424551;
 
-	--pumpkin-color: #d9821a;
-	--spectra-color01: #dadfdf;
-	--spectra-color02: #b5c1c0;
-	--spectra-color03: #92a3a2;
-	--spectra-color04: #4f6a6a;
-	--spectra-color05: #2f4f4f;
-	--spectra-color06: #294242;
-	--spectra-color07: #1c2a29;
-	--bgImage-color: #505050;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent: #ff5a30;
+  --color-accent-active: #fc3300;
+  --color-gray: #e5e8ed;
+  --color-gray-active: #d7dadd;
+  --color-darkGray: #424551;
+  --color-darkGray-active: #1e212c;
+  --color-pumpkin: #ff7518;
+  --color-pumpkin-active: #f75e25;
+
+  --color-bg: #919090;
+  --color-bg-light: #dfe5ec;
+  --color-bg-dark: #28405c
 
 	//=============/ blocks /=============
 	--block-radius: 8px;

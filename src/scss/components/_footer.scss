@@ -4,8 +4,6 @@
 	height: 20px;
 
 	&__container {
-		//отступ для якорей, чтобы header не перекрывал контент
-		// margin-top: var(--offset-maximum);
 		text-align: center;
 		height: 100%;
 		background-color: var(--color-accent);
